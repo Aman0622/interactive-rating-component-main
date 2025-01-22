@@ -1,0 +1,170 @@
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+  color: hsl(217, 12%, 63%);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.box {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  background-color: #1d232d;
+  color: white;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  font-size: 15px;
+}
+#ratingbtn {
+  color: hsl(217, 12%, 63%);
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1rem;
+}
+#rating {
+  background-color: #272e38;
+  color: white;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  border-radius: 50%;
+}
+#star {
+  min-width: 50px;
+  min-height: 50px;
+  max-width: 50px;
+  max-height: 50px;
+  background-color: #282e38;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.box_1 h1 {
+  padding: 1rem 0 0 0;
+}
+.box_1 p {
+  padding: 1rem 0 0 0;
+  width: 95%;
+}
+.Submit {
+  margin-top: 2rem;
+  width: 95%;
+  color: #282e38;
+  font-weight: 700;
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 20px;
+  height: 40px;
+  font-size: 20px;
+}
+.box_2 {
+  display: none;
+  text-align: center;
+}
+.box_2 img {
+  margin: 0 auto;
+}
+.pbox {
+  width: 50%;
+  background-color: #282e38;
+  margin: 2rem auto 0 auto;
+  padding: 0.2rem;
+  border-radius: 20px;
+}
+.pbox p {
+  color: hsl(25, 97%, 53%);
+}
+.box_2 h2 {
+  padding: 1rem 0 0 0;
+}
+#para {
+  padding: 1rem 0 0 0;
+}
+#rating:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #272e38;
+  transition: 1s;
+}
+.num5:hover {
+  cursor: pointer;
+  background-color: hsl(25, 97%, 53%);
+  color: #272e38;
+  transition: 1s;
+}
+.submit:hover {
+  cursor: pointer;
+  background-color: white;
+  color: #272e38;
+  transition: 1s;
+}

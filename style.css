@@ -168,3 +168,26 @@ body {
   color: #272e38;
   transition: 1s;
 }
+@media screen and (max-width: 1000px) {
+  .box {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .box {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 524px) {
+  .pbox {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 431px) {
+  .box {
+    width: 85%;
+  }
+  .pbox {
+    width: 80%;
+  }
+}
